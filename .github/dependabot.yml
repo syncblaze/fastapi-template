@@ -10,4 +10,4 @@ updates:
     schedule:
       interval: "daily"
     rebase-strategy: auto
-    target-branch: main
+    target-branch: master
