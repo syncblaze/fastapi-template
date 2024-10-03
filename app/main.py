@@ -34,7 +34,7 @@ from app import CONFIG
 from app.api import v1_router
 from app.sql import Base, engine
 
-if CONFIG.PRODUCTION:
+if CONFIG.PRODUCTION and CONFIG.SENTRY_DSN:
     sentry_sdk.init(
         dsn=CONFIG.SENTRY_DSN,
         enable_tracing=True,
